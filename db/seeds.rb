@@ -22,7 +22,7 @@ heroines = [
   {name:"Kitty Pryde", super_name:"Shadowcat" },
   {name:"Elektra Natchios", super_name:"Elektra" }
 ]
-
+puts "created"
 # ---------------
 # POWERFUL HEROINES:
 # Once you set up your tables and associations the way you want them, you can
@@ -31,6 +31,6 @@ heroines = [
 # (******Note****** If you try to do this before you set up proper associations, it will error.)
 # ---------------
 heroines = heroines.map { |heroine| heroine.merge( { power_id: Power.all.sample.id } ) }
-# ---------------
+puts "created111"
 
 heroines.each { |heroine| Heroine.create(heroine) }
