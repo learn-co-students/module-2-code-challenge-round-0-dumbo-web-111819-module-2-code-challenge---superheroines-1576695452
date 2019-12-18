@@ -1,0 +1,6 @@
+<h1>SuperHeroine Page</h1>
+<%=@heroine.name%><br>
+<%=@heroine.super_name%><br>
+<h2>Power</h2><br>
+<%@power = @heroine.power_id%><br>
+<h2><%=link_to@heroine.power.name, power_path(@power)%></h2>
